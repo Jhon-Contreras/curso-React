@@ -1,14 +1,12 @@
 
-const nombre = 'Jhon';
-const apellido = 'Contreras';
-
-const nombreCompleto = `Hola, soy ${nombre} ${apellido}`;
-console.log(nombreCompleto);
-
-
-
-function getSaludo(nombre){
-    return 'hola mundo ' + nombre;
-    
+const persona1 = {
+    nombre: 'Jhon',
+    apellido: 'Contreras'
 }
-console.log(`Saludo: ${getSaludo(nombre)}`);
+// spread operator 
+const persona2 = {...persona1};
+
+persona2.nombre = 'Pelao';
+
+console.log(persona1);
+console.log(persona2);
