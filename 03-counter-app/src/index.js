@@ -1,9 +1,16 @@
+// librerias necesarias de react 
 import React from 'react'
 import ReactDOM from 'react-dom';
 
-console.log('Hola mundo');
+// importar componente 
+import PrimeraApp from './PrimeraApp';
 
-const saludo = <h1>Hola Mundo desde React</h1>;
+
+// importar css 
+import './index.css';
+
+
+
 const divRoot = document.querySelector('#root');
 
-ReactDOM.render(saludo, divRoot);
+ReactDOM.render( <PrimeraApp />, divRoot);
