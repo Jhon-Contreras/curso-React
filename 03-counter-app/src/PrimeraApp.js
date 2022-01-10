@@ -5,16 +5,20 @@
 
 // en caso de error de JSX se necesitaría importar react 
 
+
+import PropTypes from 'prop-types';
+
 // Functional components
 
 // props con destructuracion 
-const PrimeraApp = ( { saludo = 'Hola mundo por defecto' } ) => {
+const PrimeraApp = ( { saludo } ) => {
 
     // const saludo = 'Hola mundo';
     // const saludoObjeto = {
     //     nombre : 'JHhon',
     //     edad: 2
     // };
+
     return (
        <>
             {/* <pre> { JSON.stringify(saludoObjeto, null, 3) } </pre> */}
@@ -28,8 +32,16 @@ const PrimeraApp = ( { saludo = 'Hola mundo por defecto' } ) => {
         // <p>Soy un parrafo</p>
         // </Fragment>
     );
+
   
     
+}
+
+// con PropTypes establecemos propiedades necesarias para los props que recibe un componente 
+
+PrimeraApp.propTypes = {
+    // acá le decimos que saludo es requerido y que debe ser de tipo string 
+    saludo: PropTypes.string.isRequired
 }
 
 export default PrimeraApp;
