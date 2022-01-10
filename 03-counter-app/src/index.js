@@ -16,6 +16,6 @@ import './index.css';
 
 const divRoot = document.querySelector('#root');
 
-ReactDOM.render( <PrimeraApp /> , divRoot)
+ReactDOM.render( <PrimeraApp saludo="hola mundo"/> , divRoot)
 
 

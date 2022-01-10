@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 // Functional components
 
 // props con destructuracion 
-const PrimeraApp = ( { saludo } ) => {
+const PrimeraApp = ( { saludo, parrafo } ) => {
 
     // const saludo = 'Hola mundo';
     // const saludoObjeto = {
@@ -23,7 +23,7 @@ const PrimeraApp = ( { saludo } ) => {
        <>
             {/* <pre> { JSON.stringify(saludoObjeto, null, 3) } </pre> */}
             <h1> { saludo } </h1>
-            <p>Soy un parrafo</p>
+            <p> { parrafo } </p>
        </>
         // componente con Fragment (necesita importar libreria) 
 
@@ -42,6 +42,10 @@ const PrimeraApp = ( { saludo } ) => {
 PrimeraApp.propTypes = {
     // acá le decimos que saludo es requerido y que debe ser de tipo string 
     saludo: PropTypes.string.isRequired
+}
+// props por default 
+PrimeraApp.defaultProps = {
+    parrafo: 'Soy un parrafo desde defaultProps'
 }
 
 export default PrimeraApp;
