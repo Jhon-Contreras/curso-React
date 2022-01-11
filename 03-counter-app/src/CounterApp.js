@@ -1,19 +1,37 @@
 
 // importamos PropTypes para manejar el props  value 
+import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 
 // el componente CounterApp es un functional component y recibe el props (desestructurado) 
 const CounterApp = ( {value} ) =>{
 
+    const [ counter, setCounter ] = useState(value= 10); //retorna un [] con 2 valores
+
     //handleAdd
     const handleAdd = (e) =>{
-        console.log(e);
+        // setCounter( counter + 1)
+        // esta es otra alternativa 
+        setCounter( (c) => c + 1  )
     } 
+    // handleSubtract
+    const handleSubtract = (e) =>{
+        // setCounter( counter -1)
+        setCounter( (c) => c - 1)
+    }
+    // handleReset 
+    const handleReset = (e) =>{
+        
+        setCounter(value)
+    }
+
     // retornamos el jsx 
     return (
         <>
             <h1> CounterApp </h1>
-            <p> { value } </p>
+            <p> { counter } </p>
+            <button onClick={ handleSubtract }>-1</button>
+            <button onClick={ handleReset }>Reset</button>
             <button onClick={ handleAdd }>+1</button>
         </>
     );
