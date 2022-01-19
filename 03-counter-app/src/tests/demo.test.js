@@ -10,7 +10,6 @@ describe('Pruebas en el archivo demo.test.js', () => {
         const mensaje2 = `Hola Mundo`;
         
         //3. Observar el comportamiento
-    
         expect( mensaje ).toBe(mensaje2); // ===
     
     })
