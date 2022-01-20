@@ -4,9 +4,9 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 
 // el componente CounterApp es un functional component y recibe el props (desestructurado) 
-const CounterApp = ( {value} ) =>{
+const CounterApp = ( {value = 10} ) =>{
 
-    const [ counter, setCounter ] = useState(value= 10); //retorna un [] con 2 valores
+    const [ counter, setCounter ] = useState(value); //retorna un [] con 2 valores
 
     //handleAdd
     const handleAdd = (e) =>{
@@ -39,7 +39,7 @@ const CounterApp = ( {value} ) =>{
 
 // establecemos que value es de tipo numero y es requerido 
 CounterApp.propTypes = {
-    value: PropTypes.number.isRequired
+    value: PropTypes.number
 }
 
 // exportamos el componente 
