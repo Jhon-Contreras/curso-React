@@ -22,8 +22,8 @@ const PrimeraApp = ( { saludo, parrafo } ) => {
     return (
        <>
             {/* <pre> { JSON.stringify(saludoObjeto, null, 3) } </pre> */}
-            <h1> { saludo } </h1>
-            <p> { parrafo } </p>
+            <h1>{ saludo }</h1>
+            <p>{ parrafo }</p>
        </>
         // componente con Fragment (necesita importar libreria) 
 

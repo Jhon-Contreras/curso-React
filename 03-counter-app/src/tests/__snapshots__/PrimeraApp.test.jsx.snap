@@ -1,16 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pruebas en <PrimerApp /> Debe de mostrar <PrimeraApp /> correctamente 1`] = `
+exports[`Pruebas en <PrimeraApp /> Debe de mostrar <PrimeraApp /> correctamente 1`] = `
 <Fragment>
   <h1>
-     
     hola mundo
-     
   </h1>
   <p>
-     
     Soy un parrafo desde defaultProps
-     
   </p>
 </Fragment>
 `;
