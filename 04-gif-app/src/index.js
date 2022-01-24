@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import GifApp from './components/GifApp';
+import GifApp from './pages/GifApp';
 import './index.css';
 
 
