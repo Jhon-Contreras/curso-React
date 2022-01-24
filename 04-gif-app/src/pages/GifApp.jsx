@@ -4,7 +4,7 @@ import AddCategory from '../components/AddCategory';
 const GifApp = () => {
 
    
-    const [categories, setCategories] = useState(['Star Wars Rebels', 'Clone Wars', 'The Mandalorian']);
+     const [categories, setCategories] = useState(['Star Wars Rebels', 'Clone Wars', 'The Mandalorian']);
 
     // const handleAdd = () =>{
     //     // esta funcion debe agregar un nuevo elemento al arreglo, con setCategories 
@@ -15,7 +15,7 @@ const GifApp = () => {
     return (
         <div>
             <h2>Gif App</h2>
-            <AddCategory />
+            <AddCategory setCategories={ setCategories }/>
             <hr />
 
            
